@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprende HTML con Nicolas Shurmann-Mi primera Web</title>
+    <style>
+      table th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- menejo de tablas -->
+    <table style="width: 500px">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hola beats</td>
+          <td>Gratis</td>
+        </tr>
+        <tr>
+          <td>Rene Feliz</td>
+          <td>19.90$</td>
+        </tr>
+        <tr>
+          <td>chanchito feliz super</td>
+          <td>29.90$</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td>Total</td>
+        <td>49.80$</td>
+      </tfoot>
+    </table>
+    <!-- OL es lista ordenada  UL=NO ordenada-->
+    <ul>
+      <li>Lista no ordenada 1</li>
+      <li>Lista no ordenada 2</li>
+      <li>Lista no ordenada 3</li>
+      <li>Lista no ordenada 4</li>
+    </ul>
+    <ol>
+      <li value="50">Elementos 1</li>
+      <li>Elementos 2</li>
+      <li>Elementos 3</li>
+      <li>Elementos 4</li>
+      <li>Elementos 5</li>
+      <ol>
+        <li style="list-style-type: lower-roman">sub elemento 1</li>
+        <li style="list-style-type: lower-roman">sub elemento 2</li>
+        <li style="list-style-type: lower-roman">sub elemento 3</li>
+      </ol>
+    </ol>
+    <form action="/formulario" method="GET">
+      <label for="nombre">Nombre:</label>
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Digite Nombre"
+      />
+      <!-- type pueden ser email, text, date, file -->
+      <br />
+      <label for="apellido">Apellido:</label>
+      <input
+        type="text"
+        id="apellido"
+        name="apellido"
+        placeholder="Digite Apellido"
+      />
+      <br />
+      <label for="comentario">Comentario</label> <br />
+      <textarea
+        name="comentario"
+        id="comentario"
+        placeholder="ingrese comentario"
+        cols="30"
+        rows="7"
+      ></textarea>
+      <br />
+      <button type="button">
+        <img src="./img/coffee.png" width="150" />Boton
+      </button>
+      <br />
+      <button type="reset">Reset</button>
+      <button type="submit" value="Enviar">Submit</button>
+      <!-- botones son mas personalizables -->
+    </form>
+
+    <h1>Mi primer Heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading></h4>
+    <h5>Mi quinto heading</h5>
+    <h6>heading Chanchito Feliz</h6>
+    <p>
+      Parrafos: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptatem atque laboriosam dignissimos autem ullam tempora ratione
+      adipisci labore modi quod iure delectus quisquam officiis unde laborum
+      facere, quis eos nesciunt!
+    </p>
+    <p>Chanchito triste esta muy triste</p>
+    <hr />
+    <h2>Heading Chanchito Felipe</h2>
+    <p>
+      <span style="color: blue">Texto un poco mas largo:</span> <br />Lorem
+      ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos tenetur ex
+      eos voluptatem, fuga dolorum eius est cupiditate fugit itaque unde in
+      aperiam! Repellat ea nisi aspernatur. Nostrum, consequuntur sapiente.
+    </p>
+    <!-- este texto es un comentario y no aparexe en el explorador-->
+    <!-- hipervinculo -->
+    <a href="https://www.google.com.co" target="_blank">Ir a Google</a> <br />
+    <img src="./img/coffee.png" alt="imagen prueba" width="200" height="auto" />
+    <!-- formularios -->
+  </body>
+</html>

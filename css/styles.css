@@ -1,0 +1,221 @@
+#titulo {
+  color: brown;
+}
+
+p.especial {
+  color: mediumseagreen;
+}
+
+p.texto {
+  color: slateblue;
+}
+
+div p {
+  color: aquamarine;
+}
+
+div h2,
+div h3 {
+  color: brown;
+}
+
+* {
+  font-size: 24px;
+  color: black;
+}
+
+/* comentarios */
+
+/* .color{
+    color: #FF0000;
+    .color{
+        color: rgb(0,255,255);
+    }
+} */
+
+.color {
+  /* grosor, color,  estilo borde=dashed, solid, dotted */
+  /* border:5px black solid; */
+  /* dotted dashed solid double
+    groove ridge inset => tridimensional
+    none hidden*/
+  border-style: solid;
+  border-color: blue;
+  border-radius: 5px;
+  border-width: 0.25rem;
+}
+
+#fondo {
+  /* background-color: red; */
+  /* background-color: rgba(0,0,0, 0.3); */
+  background-color: rgba(255, 0, 0);
+  /* , 0.30 = trasp/inte 1=solid 0=transp */
+  height: 200px;
+  /* opacity: 0.3;  opacidad texto y backgr para este caso */
+  background: #f50 url("../img/coffee.png") repeat-y center bottom / 200px 200px;
+  /* background-image: url('img/coffee-1.png'); */
+  /* background-size: cover;       */
+  /* cover, se redimenciona, con auto, contain=no */
+  /* ancho y alto en background-size: ; */
+  background-size: 180px 180px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-repeat: repeat-x; */
+  /* background-position: center bottom; */
+}
+
+/* #image{
+    height: 150px;
+    width: auto;
+    justify-content: center;
+    display: flex;
+    border-image: 3px;
+    border-radius: 10px;
+} */
+
+.margen {
+  background-color: chocolate;
+  margin: 15px;
+  /*top, right, bottom, left*/
+  padding: 30px 15px 5px;
+  border: solid 1px black;
+  height: 100px;
+  width: 50px;
+  overflow: scroll;
+  outline: 1px solid red;
+}
+
+.text {
+  font-family: "roboto", sans-serif;
+  font-size: 45px;
+  text-align: justify;
+  /*center, rigth, left, justify  */
+  text-decoration: underline;
+  text-shadow: 3px 5px 4px blue;
+}
+
+/* colocar estos selectores de {a} en este orden */
+a:link {
+  color: blueviolet;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: rgb(44, 24, 224);
+}
+
+a:active {
+  color: red;
+}
+
+ul {
+  background-color: cyan;
+  list-style-type: georgian; /*georgian circle, disc, none:quita los puntos */
+  /* padding-left: 0; */
+}
+
+/* 
+comandos rapidos emmet
+https://coderslink.com/talento/blog/ahorra-tiempo-al-escribir-codigo-html-en-visual-studio-code-utilizando-emmet/ 
+*/
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+td,
+td {
+  border: solid 1px #f00;
+  padding: 5px;
+}
+th {
+  background-color: tomato;
+  color: white;
+  text-transform: uppercase;
+  font-family: roboto sans-serif;
+}
+
+/*even = par 2n  odd = impar 2n+1*/
+tr:nth-child(even) {
+  background-color: rgb(215, 241, 184);
+}
+
+tr:hover {
+  background-color: #aaa;
+  cursor: pointer; /* mano */
+}
+
+span {
+  /* se presente en bloque, pasa a la sgte linea*/
+  display: block;
+  /* display: none ; */
+  /* oculta los elementos, para este ej. estan en el span */
+  /* visibility: hidden;   */
+  /* otra forma de ocultar */
+  max-width: 300px; /*este hace responsive,si >300px se acomoda */
+  background-color: rgb(165, 182, 233);
+}
+
+.inline {
+  display: inline;
+}
+
+#position {
+  /*sticky = se mueve a donde vaya el cursor o subir y bajar */
+  color: white;
+  background-color: #f00;
+  position: sticky; /*static relative absolute sticky*/
+  left: 20px;
+  top: 5px;
+  /*fixed:se mueve en toda la pantalla el texto */
+}
+
+.container {
+  height: 200px;
+  font-size: 25px;
+}
+
+.left {
+  float: left;
+  width: 150px;
+  height: 150px;
+}
+
+.right {
+  float: right;
+  width: 150px;
+}
+
+.strong {
+  color: red;
+}
+
+/* antes .card cambiar en index.html*/ 
+.column{  
+  /* border: solid 0px #f50;   */
+   /* border-radius: 5px; */
+  border: solid 1px #000;
+  margin: 0;  /*0 15px  */
+  /* vert horz */
+  padding: 10px 0px; /* 10px 15px */
+  width: 30%;
+}
+
+/* util menus de navegacion izq-der y viceversa*/
+.inline-block{
+  display:inline-block;
+  height: 55px;
+  background-color: #f00;
+}
+
+.center{
+  padding: 30px 0;  /* 50 px y 0 horizontal */
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  background-color: aqua;
+}
